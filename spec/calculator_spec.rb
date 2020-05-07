@@ -24,5 +24,11 @@ RSpec.describe Calculator do
     it 'divides the two numbers' do
       expect(Calculator.divide(10, 3).round(4)).to eq(3.3333)
     end
+
+    it 'prints an error message if we attempt the impossible' do
+      expect { Calculator.divide(10, 0) }.to raise_error(
+        ZeroDivisionError, 'You can\'t divide by zero.'
+      )
+    end
   end
 end
