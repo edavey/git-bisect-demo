@@ -1,6 +1,8 @@
 class Calculator
-  def self.add(a, b)
-    a + b
+  def self.add(*args)
+    args.inject do |product, number|
+      product + number
+    end
   end
 
   def self.subtract(a, b)

@@ -10,6 +10,10 @@ RSpec.describe Calculator do
     it 'adds one float to another' do
       expect(Calculator.add(1.123, 2.234).round(4)).to eq(3.357)
     end
+
+    it 'handles adding a list of numbers' do
+      expect(Calculator.add(1.123, 2.234, 2).round(4)).to eq(5.357)
+    end
   end
 
   describe '::subtract(a, b)' do
