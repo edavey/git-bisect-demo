@@ -13,4 +13,10 @@ RSpec.describe Calculator do
       expect(Calculator.subtract(1, 3)).to eq(2)
     end
   end
+
+  describe '::multiply(a, b)' do
+    it 'multiplies the two numbers' do
+      expect(Calculator.multiply(2, 3)).to eq(6)
+    end
+  end
 end

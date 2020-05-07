@@ -6,4 +6,8 @@ class Calculator
   def self.subtract(a, b)
     b - a
   end
+
+  def self.multiply(a, b)
+    a * b
+  end
 end
