@@ -26,6 +26,10 @@ RSpec.describe Calculator do
     it 'multiplies the two numbers' do
       expect(Calculator.multiply(2, 3)).to eq(6)
     end
+
+    it 'multiplies the two floats' do
+      expect(Calculator.multiply(2.345, 3.456).round(4)).to eq(8.1043)
+    end
   end
 
   describe '::divide(a, b)' do
