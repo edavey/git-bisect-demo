@@ -12,7 +12,7 @@ class Calculator
   end
 
   def self.divide(a, b)
-    raise ZeroDivisionError, 'You can\'t divide by zero.' if b.zero?
+    raise ZeroDivisionError, 'You can\'t divide by zero.' if b.to_s == '0'
 
     Float(a) / Float(b)
   end
