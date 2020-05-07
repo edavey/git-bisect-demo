@@ -16,6 +16,10 @@ RSpec.describe Calculator do
     it 'subtract one number from the other' do
       expect(Calculator.subtract(1, 3)).to eq(2)
     end
+
+    it 'subtracts floats too' do
+      expect(Calculator.subtract(1.123, 3.345).round(4)).to eq(2.222)
+    end
   end
 
   describe '::multiply(a, b)' do
