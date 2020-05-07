@@ -7,8 +7,10 @@ class Calculator
     b - a
   end
 
-  def self.multiply(a, b)
-    a * b
+  def self.multiply(*args)
+    args.inject do |product, number|
+      product * number
+    end
   end
 
   def self.divide(a, b)
