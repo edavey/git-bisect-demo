@@ -19,4 +19,10 @@ RSpec.describe Calculator do
       expect(Calculator.multiply(2, 3)).to eq(6)
     end
   end
+
+  describe '::divide(a, b)' do
+    it 'divides the two numbers' do
+      expect(Calculator.divide(10, 3).round(4)).to eq(3.3333)
+    end
+  end
 end
